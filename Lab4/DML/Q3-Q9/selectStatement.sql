@@ -36,7 +36,7 @@ from customer
 where upper(cus_name) like 'A%' or upper(cus_name) like '%A';
 
 -- 9: Create a stored procedure to display supplier id, name, rating and Type_of_Service. 
-DELIMITER &&
+DELIMITER //
 create PROCEDURE showRating()
 begin
     select reports.supp_id, reports.supp_name,reports.Average,
@@ -53,7 +53,6 @@ begin
          on test1.pricing_id=supplier_pricing.supp_id)
          as test2 group by supplier_pricing.supp_id)
          as finals inner join supplier where finals.supp_id=supplier.supp_id) as reports;
-end && 
-DELIMITER;
+end //
 
 call showRating();

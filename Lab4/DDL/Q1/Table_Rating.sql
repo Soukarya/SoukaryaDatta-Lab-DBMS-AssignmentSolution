@@ -1,4 +1,4 @@
-create table rating
+create table if not exists rating
 (
     RAT_ID int primary key,
     ORD_ID int,

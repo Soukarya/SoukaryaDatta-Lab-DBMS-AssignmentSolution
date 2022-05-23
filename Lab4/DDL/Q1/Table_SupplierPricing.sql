@@ -1,4 +1,4 @@
-create table supplier_pricing
+create table if not exists supplier_pricing
 (
     PRICING_ID int primary key,
     PRO_ID int,

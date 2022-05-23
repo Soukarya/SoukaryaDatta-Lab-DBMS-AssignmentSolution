@@ -1,4 +1,4 @@
-create table supplier
+create table if not exists supplier
 (
 	SUPP_ID int primary key,
 	SUPP_NAME varchar(50) not null,

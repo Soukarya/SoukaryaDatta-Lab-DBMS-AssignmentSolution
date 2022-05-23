@@ -1,4 +1,4 @@
-create table orders
+create table if not exists orders
 (
 	ORD_ID int primary key,
 	ORD_AMOUNT int not null,

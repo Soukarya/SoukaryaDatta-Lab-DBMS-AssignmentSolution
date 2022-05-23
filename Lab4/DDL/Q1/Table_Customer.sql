@@ -1,4 +1,4 @@
-create table customer
+create table if not exists customer
 (
     CUS_ID INT primary key,
     CUS_NAME varchar(20) not null, 

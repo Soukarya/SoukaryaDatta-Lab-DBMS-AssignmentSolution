@@ -1,4 +1,4 @@
-create table product
+create table if not exists product
 (
     PRO_ID int primary key,
     PRO_NAME varchar(20) DEFAULT 'Dummy' not null,
